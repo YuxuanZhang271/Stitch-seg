@@ -23,6 +23,10 @@ models/
 weights/
 data/Cholec80
 data/CholecSeg8k
+data/
+datasets/
+results/
+runs/
 
 # JSON: ignore outputs and local settings, keep configs
 *.json
