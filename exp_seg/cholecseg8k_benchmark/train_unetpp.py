@@ -29,18 +29,18 @@ set_env()
 class CFG:
     # Unet++ settings
     backbone = "tu-convnext_base"
-    save_syntax = "unetpp"
+    save_syntax = "unetpp_smoke"  # "unetpp"
 
     # training settings
     autocast = True
     image_size = 512
-    fold = 4
+    fold = 0  # 4
     debug = False
 
-    num_epochs = 100
+    num_epochs = 2  # 100
     # LABEL2CH index ranges from 0..12 (background 0 + 12 classes), so 13 classes
     mask_num = 13
-    batch_size = 16
+    batch_size = 2  # 16
     learning_rate = 1e-4
 
     train_augmentation = A.Compose(
@@ -375,7 +375,7 @@ def main():
         encoder_weights="imagenet",
         in_channels=3,
         classes=CFG.mask_num,
-        activation="softmax",
+        activation=None,  # "softmax"
     ).to(device)
 
     base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -383,6 +383,9 @@ def main():
     valid_csv = os.path.join("splits", f"cholecseg8k_test_{CFG.fold}.csv")
     train_df = pd.read_csv(train_csv)
     valid_df = pd.read_csv(valid_csv)
+    # Smoke test only — remove for full training
+    train_df = train_df.head(32).copy()
+    valid_df = valid_df.head(32).copy()
 
     train_dataset = CholecSeg8kDataset(train_df, transform=CFG.train_augmentation)
     val_dataset = CholecSeg8kDataset(valid_df, transform=CFG.valid_augmentation)
@@ -392,26 +395,26 @@ def main():
         train_dataset,
         batch_size=CFG.batch_size,
         shuffle=True,
-        num_workers=32,
+        num_workers=0,  # 32
         pin_memory=True,
         drop_last=True,
-        persistent_workers=True,
+        persistent_workers=False,  # True
     )
 
     val_loader = DataLoader(
         val_dataset,
         batch_size=CFG.batch_size,
         shuffle=False,
-        num_workers=32,
+        num_workers=0,  # 32
         pin_memory=True,
-        persistent_workers=True,
+        persistent_workers=False,  # True
     )
 
     test_loader = DataLoader(
         test_dataset,
         batch_size=1,
         shuffle=False,
-        num_workers=32,
+        num_workers=0,  # 32
         pin_memory=True,
     )
 

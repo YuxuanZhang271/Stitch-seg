@@ -1,0 +1,2 @@
+fold,bbox_mode,evaluated_frames,processed_frames,clips,included_classes,baseline_mdice,stitch_mdice,baseline_miou,stitch_miou,baseline_pixel_accuracy,stitch_pixel_accuracy,baseline_peripheral_mdice,stitch_peripheral_mdice,note
+4,internal,20,75,1,"[2, 3, 4, 5, 6, 7, 8, 9]",0.8813902836884636,0.8797744762379083,0.7988875389272472,0.7958331836625983,0.9445534963483557,0.9445667641360247,0.9051263681998162,0.9033458404548685,Short-clip PNG evaluation WITHOUT learned tool/port masking; not full Cholec80 continuous-video reproduction.

@@ -1,0 +1,64 @@
+/home/yuxuanzhang/Documents/Workspace/miniconda3/envs/stitch/lib/python3.12/site-packages/albumentations/core/validation.py:114: UserWarning: ShiftScaleRotate is a special case of Affine transform. Please use Affine transform instead.
+  original_init(self, **validated_kwargs)
+/media/yuxuanzhang/yuxuazha/Projects/Stitch-seg/exp_seg/cholecseg8k_benchmark/train_unetpp.py:65: UserWarning: Argument(s) 'max_holes, max_height, max_width' are not valid for transform CoarseDropout
+  A.CoarseDropout(max_holes=10, max_height=100, max_width=100, p=0.2),
+/home/yuxuanzhang/Documents/Workspace/miniconda3/envs/stitch/lib/python3.12/site-packages/segmentation_models_pytorch/encoders/__init__.py:86: UserWarning: For 'tu-' (timm universal) encoders, `encoder_weights` should be set to True to download pretrained weights or None for random initialization. The pretrained variant is defined in the encoder name i.e 'tu-<model_name>.<pretrained_tag>'. Got encoder_weights='imagenet'.
+  warnings.warn(
+
+Epoch 1/2
+/media/yuxuanzhang/yuxuazha/Projects/Stitch-seg/exp_seg/cholecseg8k_benchmark/train_unetpp.py:238: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=CFG.autocast and device.type == "cuda")
+Training:   0%|          | 0/16 [00:00<?, ?it/s]Training:   0%|          | 0/16 [00:17<?, ?it/s, loss=1.1880]Training:   6%|▋         | 1/16 [00:17<04:19, 17.33s/it, loss=1.1880]Training:   6%|▋         | 1/16 [00:17<04:19, 17.33s/it, loss=1.1969]Training:  12%|█▎        | 2/16 [00:17<01:42,  7.34s/it, loss=1.1969]Training:  12%|█▎        | 2/16 [00:17<01:42,  7.34s/it, loss=1.2001]Training:  19%|█▉        | 3/16 [00:17<00:53,  4.08s/it, loss=1.2001]Training:  19%|█▉        | 3/16 [00:18<00:53,  4.08s/it, loss=1.1853]Training:  25%|██▌       | 4/16 [00:18<00:31,  2.60s/it, loss=1.1853]Training:  25%|██▌       | 4/16 [00:18<00:31,  2.60s/it, loss=1.1831]Training:  31%|███▏      | 5/16 [00:18<00:19,  1.78s/it, loss=1.1831]Training:  31%|███▏      | 5/16 [00:19<00:19,  1.78s/it, loss=1.1952]Training:  38%|███▊      | 6/16 [00:19<00:13,  1.37s/it, loss=1.1952]Training:  38%|███▊      | 6/16 [00:19<00:13,  1.37s/it, loss=1.1766]Training:  44%|████▍     | 7/16 [00:19<00:09,  1.03s/it, loss=1.1766]Training:  44%|████▍     | 7/16 [00:19<00:09,  1.03s/it, loss=1.1965]Training:  50%|█████     | 8/16 [00:19<00:06,  1.22it/s, loss=1.1965]Training:  50%|█████     | 8/16 [00:20<00:06,  1.22it/s, loss=1.1718]Training:  56%|█████▋    | 9/16 [00:20<00:04,  1.54it/s, loss=1.1718]Training:  56%|█████▋    | 9/16 [00:20<00:04,  1.54it/s, loss=1.1930]Training:  62%|██████▎   | 10/16 [00:20<00:03,  1.78it/s, loss=1.1930]Training:  62%|██████▎   | 10/16 [00:20<00:03,  1.78it/s, loss=1.1973]Training:  69%|██████▉   | 11/16 [00:20<00:02,  2.09it/s, loss=1.1973]Training:  69%|██████▉   | 11/16 [00:21<00:02,  2.09it/s, loss=1.1837]Training:  75%|███████▌  | 12/16 [00:21<00:01,  2.28it/s, loss=1.1837]Training:  75%|███████▌  | 12/16 [00:21<00:01,  2.28it/s, loss=1.1865]Training:  81%|████████▏ | 13/16 [00:21<00:01,  2.29it/s, loss=1.1865]Training:  81%|████████▏ | 13/16 [00:21<00:01,  2.29it/s, loss=1.1742]Training:  88%|████████▊ | 14/16 [00:21<00:00,  2.50it/s, loss=1.1742]Training:  88%|████████▊ | 14/16 [00:22<00:00,  2.50it/s, loss=1.1828]Training:  94%|█████████▍| 15/16 [00:22<00:00,  2.71it/s, loss=1.1828]Training:  94%|█████████▍| 15/16 [00:22<00:00,  2.71it/s, loss=1.1646]Training: 100%|██████████| 16/16 [00:22<00:00,  2.95it/s, loss=1.1646]Training: 100%|██████████| 16/16 [00:22<00:00,  1.40s/it, loss=1.1646]
+Validation:   0%|          | 0/16 [00:00<?, ?it/s]Validation:   6%|▋         | 1/16 [00:00<00:02,  5.32it/s]Validation:  12%|█▎        | 2/16 [00:00<00:02,  5.13it/s]Validation:  19%|█▉        | 3/16 [00:00<00:02,  5.47it/s]Validation:  25%|██▌       | 4/16 [00:00<00:02,  5.01it/s]Validation:  31%|███▏      | 5/16 [00:00<00:02,  4.92it/s]Validation:  38%|███▊      | 6/16 [00:01<00:02,  4.98it/s]Validation:  44%|████▍     | 7/16 [00:01<00:01,  5.18it/s]Validation:  50%|█████     | 8/16 [00:01<00:01,  5.09it/s]Validation:  56%|█████▋    | 9/16 [00:01<00:01,  5.22it/s]Validation:  62%|██████▎   | 10/16 [00:01<00:01,  5.26it/s]Validation:  69%|██████▉   | 11/16 [00:02<00:00,  5.22it/s]Validation:  75%|███████▌  | 12/16 [00:02<00:00,  5.22it/s]Validation:  81%|████████▏ | 13/16 [00:02<00:00,  5.35it/s]Validation:  88%|████████▊ | 14/16 [00:02<00:00,  5.27it/s]Validation:  94%|█████████▍| 15/16 [00:02<00:00,  5.18it/s]Validation: 100%|██████████| 16/16 [00:03<00:00,  5.13it/s]Validation: 100%|██████████| 16/16 [00:03<00:00,  5.17it/s]
+indice 0 | 0.1223
+indice 1 | 0.0000
+indice 2 | 0.0035
+indice 3 | 0.2539
+indice 4 | 0.0027
+indice 5 | 0.0712
+indice 6 | 0.0165
+indice 7 | 0.1753
+indice 8 | 0.0023
+indice 9 | 0.0401
+indice 10 | 0.0003
+indice 11 | 0.0000
+indice 12 | 0.0000
+Train Loss: 1.1860
+Val Loss: 0.0529
+Saved best model!
+
+Epoch 2/2
+/media/yuxuanzhang/yuxuazha/Projects/Stitch-seg/exp_seg/cholecseg8k_benchmark/train_unetpp.py:238: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=CFG.autocast and device.type == "cuda")
+Training:   0%|          | 0/16 [00:00<?, ?it/s]Training:   0%|          | 0/16 [00:00<?, ?it/s, loss=1.1969]Training:   6%|▋         | 1/16 [00:00<00:04,  3.27it/s, loss=1.1969]Training:   6%|▋         | 1/16 [00:00<00:04,  3.27it/s, loss=1.1703]Training:  12%|█▎        | 2/16 [00:00<00:04,  3.28it/s, loss=1.1703]Training:  12%|█▎        | 2/16 [00:00<00:04,  3.28it/s, loss=1.1720]Training:  19%|█▉        | 3/16 [00:00<00:04,  2.94it/s, loss=1.1720]Training:  19%|█▉        | 3/16 [00:01<00:04,  2.94it/s, loss=1.1524]Training:  25%|██▌       | 4/16 [00:01<00:03,  3.13it/s, loss=1.1524]Training:  25%|██▌       | 4/16 [00:01<00:03,  3.13it/s, loss=1.1807]Training:  31%|███▏      | 5/16 [00:01<00:04,  2.73it/s, loss=1.1807]Training:  31%|███▏      | 5/16 [00:02<00:04,  2.73it/s, loss=1.1738]Training:  38%|███▊      | 6/16 [00:02<00:03,  2.91it/s, loss=1.1738]Training:  38%|███▊      | 6/16 [00:02<00:03,  2.91it/s, loss=1.1721]Training:  44%|████▍     | 7/16 [00:02<00:02,  3.06it/s, loss=1.1721]Training:  44%|████▍     | 7/16 [00:02<00:02,  3.06it/s, loss=1.1880]Training:  50%|█████     | 8/16 [00:02<00:02,  2.71it/s, loss=1.1880]Training:  50%|█████     | 8/16 [00:03<00:02,  2.71it/s, loss=1.1618]Training:  56%|█████▋    | 9/16 [00:03<00:02,  2.48it/s, loss=1.1618]Training:  56%|█████▋    | 9/16 [00:03<00:02,  2.48it/s, loss=1.1819]Training:  62%|██████▎   | 10/16 [00:03<00:02,  2.62it/s, loss=1.1819]Training:  62%|██████▎   | 10/16 [00:04<00:02,  2.62it/s, loss=1.1901]Training:  69%|██████▉   | 11/16 [00:04<00:02,  2.42it/s, loss=1.1901]Training:  69%|██████▉   | 11/16 [00:04<00:02,  2.42it/s, loss=1.1915]Training:  75%|███████▌  | 12/16 [00:04<00:01,  2.64it/s, loss=1.1915]Training:  75%|███████▌  | 12/16 [00:04<00:01,  2.64it/s, loss=1.1461]Training:  81%|████████▏ | 13/16 [00:04<00:01,  2.84it/s, loss=1.1461]Training:  81%|████████▏ | 13/16 [00:04<00:01,  2.84it/s, loss=1.1707]Training:  88%|████████▊ | 14/16 [00:04<00:00,  2.94it/s, loss=1.1707]Training:  88%|████████▊ | 14/16 [00:05<00:00,  2.94it/s, loss=1.1880]Training:  94%|█████████▍| 15/16 [00:05<00:00,  3.24it/s, loss=1.1880]Training:  94%|█████████▍| 15/16 [00:05<00:00,  3.24it/s, loss=1.1592]Training: 100%|██████████| 16/16 [00:05<00:00,  3.28it/s, loss=1.1592]Training: 100%|██████████| 16/16 [00:05<00:00,  2.90it/s, loss=1.1592]
+Validation:   0%|          | 0/16 [00:00<?, ?it/s]Validation:   6%|▋         | 1/16 [00:00<00:02,  5.99it/s]Validation:  12%|█▎        | 2/16 [00:00<00:02,  5.90it/s]Validation:  19%|█▉        | 3/16 [00:00<00:02,  6.06it/s]Validation:  25%|██▌       | 4/16 [00:00<00:02,  5.73it/s]Validation:  31%|███▏      | 5/16 [00:00<00:02,  5.49it/s]Validation:  38%|███▊      | 6/16 [00:01<00:01,  5.45it/s]Validation:  44%|████▍     | 7/16 [00:01<00:01,  5.04it/s]Validation:  50%|█████     | 8/16 [00:01<00:01,  5.23it/s]Validation:  56%|█████▋    | 9/16 [00:01<00:01,  5.31it/s]Validation:  62%|██████▎   | 10/16 [00:01<00:01,  5.07it/s]Validation:  69%|██████▉   | 11/16 [00:02<00:00,  5.02it/s]Validation:  75%|███████▌  | 12/16 [00:02<00:00,  5.13it/s]Validation:  81%|████████▏ | 13/16 [00:02<00:00,  5.10it/s]Validation:  88%|████████▊ | 14/16 [00:02<00:00,  5.05it/s]Validation:  94%|█████████▍| 15/16 [00:02<00:00,  5.32it/s]Validation: 100%|██████████| 16/16 [00:03<00:00,  5.25it/s]Validation: 100%|██████████| 16/16 [00:03<00:00,  5.29it/s]
+indice 0 | 0.4300
+indice 1 | 0.0000
+indice 2 | 0.0041
+indice 3 | 0.2644
+indice 4 | 0.0086
+indice 5 | 0.0982
+indice 6 | 0.0221
+indice 7 | 0.1310
+indice 8 | 0.0029
+indice 9 | 0.0481
+indice 10 | 0.0003
+indice 11 | 0.0000
+indice 12 | 0.0000
+Train Loss: 1.1747
+Val Loss: 0.0777
+Saved best model!
+Validation:   0%|          | 0/32 [00:00<?, ?it/s]Validation:   3%|▎         | 1/32 [00:03<01:47,  3.46s/it]Validation:  12%|█▎        | 4/32 [00:03<00:19,  1.45it/s]Validation:  22%|██▏       | 7/32 [00:03<00:08,  2.95it/s]Validation:  31%|███▏      | 10/32 [00:03<00:04,  4.69it/s]Validation:  41%|████      | 13/32 [00:03<00:02,  6.64it/s]Validation:  50%|█████     | 16/32 [00:04<00:01,  8.76it/s]Validation:  59%|█████▉    | 19/32 [00:04<00:01, 10.83it/s]Validation:  69%|██████▉   | 22/32 [00:04<00:00, 12.79it/s]Validation:  78%|███████▊  | 25/32 [00:04<00:00, 14.54it/s]Validation:  88%|████████▊ | 28/32 [00:04<00:00, 15.62it/s]Validation:  94%|█████████▍| 30/32 [00:04<00:00, 15.90it/s]Validation: 100%|██████████| 32/32 [00:04<00:00, 16.11it/s]Validation: 100%|██████████| 32/32 [00:04<00:00,  6.44it/s]
+indice 0 | 0.4298
+indice 1 | 0.0000
+indice 2 | 0.0041
+indice 3 | 0.2644
+indice 4 | 0.0086
+indice 5 | 0.0983
+indice 6 | 0.0222
+indice 7 | 0.1309
+indice 8 | 0.0029
+indice 9 | 0.0479
+indice 10 | 0.0003
+indice 11 | 0.0000
+indice 12 | 0.0000

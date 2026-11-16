@@ -1,0 +1,24 @@
+/home/yuxuanzhang/Documents/Workspace/miniconda3/envs/stitch/lib/python3.12/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/yuxuanzhang/Documents/Workspace/miniconda3/envs/stitch/lib/python3.12/site-packages/ptlflow/models/megaflow/layers/attention.py:29: UserWarning: xFormers is available (Attention)
+  warnings.warn("xFormers is available (Attention)")
+/home/yuxuanzhang/Documents/Workspace/miniconda3/envs/stitch/lib/python3.12/site-packages/ptlflow/models/megaflow/layers/attention.py:46: UserWarning: flash attention 3 is not available (ViT)
+  warnings.warn("flash attention 3 is not available (ViT)")
+[!!alt_cuda_corr is not compiled!!]
+/home/yuxuanzhang/Documents/Workspace/miniconda3/envs/stitch/lib/python3.12/site-packages/ptlflow/models/ufm/layers/swiglu_ffn.py:43: UserWarning: xFormers is available (SwiGLU)
+  warnings.warn("xFormers is available (SwiGLU)")
+/home/yuxuanzhang/Documents/Workspace/miniconda3/envs/stitch/lib/python3.12/site-packages/ptlflow/models/ufm/layers/attention.py:27: UserWarning: xFormers is available (Attention)
+  warnings.warn("xFormers is available (Attention)")
+/home/yuxuanzhang/Documents/Workspace/miniconda3/envs/stitch/lib/python3.12/site-packages/ptlflow/models/ufm/layers/block.py:33: UserWarning: xFormers is available (Block)
+  warnings.warn("xFormers is available (Block)")
+Traceback (most recent call last):
+  File "/media/yuxuanzhang/yuxuazha/Projects/Stitch-seg/exp_seg/cholecseg8k_benchmark/infer_unetpp_images.py", line 251, in <module>
+    main()
+  File "/media/yuxuanzhang/yuxuazha/Projects/Stitch-seg/exp_seg/cholecseg8k_benchmark/infer_unetpp_images.py", line 143, in main
+    check_stitch_weights(cfg)
+  File "/media/yuxuanzhang/yuxuazha/Projects/Stitch-seg/exp_seg/cholecseg8k_benchmark/infer_unetpp_images.py", line 97, in check_stitch_weights
+    raise FileNotFoundError('StitchInferencer requires these missing checkpoints:\n' + '\n'.join(missing) +
+FileNotFoundError: StitchInferencer requires these missing checkpoints:
+tool_detector_weights: /media/yuxuanzhang/yuxuazha/Projects/Stitch-seg/weights/convnext_tiny-unet-best.pt
+port_detector_weights: /media/yuxuanzhang/yuxuazha/Projects/Stitch-seg/weights/convnext_base-unet-cholec80_port.pt
+Supply the tool and port segmentation weights before running stitched inference.

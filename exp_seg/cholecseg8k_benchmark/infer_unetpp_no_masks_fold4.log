@@ -1,0 +1,62 @@
+/home/yuxuanzhang/Documents/Workspace/miniconda3/envs/stitch/lib/python3.12/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/yuxuanzhang/Documents/Workspace/miniconda3/envs/stitch/lib/python3.12/site-packages/ptlflow/models/megaflow/layers/attention.py:29: UserWarning: xFormers is available (Attention)
+  warnings.warn("xFormers is available (Attention)")
+/home/yuxuanzhang/Documents/Workspace/miniconda3/envs/stitch/lib/python3.12/site-packages/ptlflow/models/megaflow/layers/attention.py:46: UserWarning: flash attention 3 is not available (ViT)
+  warnings.warn("flash attention 3 is not available (ViT)")
+[!!alt_cuda_corr is not compiled!!]
+/home/yuxuanzhang/Documents/Workspace/miniconda3/envs/stitch/lib/python3.12/site-packages/ptlflow/models/ufm/layers/swiglu_ffn.py:43: UserWarning: xFormers is available (SwiGLU)
+  warnings.warn("xFormers is available (SwiGLU)")
+/home/yuxuanzhang/Documents/Workspace/miniconda3/envs/stitch/lib/python3.12/site-packages/ptlflow/models/ufm/layers/attention.py:27: UserWarning: xFormers is available (Attention)
+  warnings.warn("xFormers is available (Attention)")
+/home/yuxuanzhang/Documents/Workspace/miniconda3/envs/stitch/lib/python3.12/site-packages/ptlflow/models/ufm/layers/block.py:33: UserWarning: xFormers is available (Block)
+  warnings.warn("xFormers is available (Block)")
+/home/yuxuanzhang/Documents/Workspace/miniconda3/envs/stitch/lib/python3.12/site-packages/segmentation_models_pytorch/encoders/__init__.py:86: UserWarning: For 'tu-' (timm universal) encoders, `encoder_weights` should be set to True to download pretrained weights or None for random initialization. The pretrained variant is defined in the encoder name i.e 'tu-<model_name>.<pretrained_tag>'. Got encoder_weights='imagenet'.
+  warnings.warn(
+[INFO] device=cuda, clips=24, annotated_targets=1920, bbox=internal
+[INFO] Clip-based image evaluation: stitching resets for every clip.
+[INFO] Learned tool/port masks DISABLED; ellipse/border mask retained.
+/home/yuxuanzhang/Documents/Workspace/miniconda3/envs/stitch/lib/python3.12/site-packages/torch/nn/modules/module.py:1783: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  return self._call_impl(*args, **kwargs)
+[1/24] video01_16585: evaluated=80, processed=80
+[2/24] video01_28580: evaluated=80, processed=80
+[3/24] video01_28660: evaluated=80, processed=80
+[4/24] video01_28740: evaluated=80, processed=80
+[5/24] video01_28820: evaluated=80, processed=80
+[6/24] video01_28900: evaluated=80, processed=80
+[7/24] video09_00992: evaluated=80, processed=80
+[8/24] video12_19500: evaluated=80, processed=80
+[9/24] video12_19900: evaluated=80, processed=80
+[10/24] video12_19980: evaluated=80, processed=80
+[11/24] video27_00160: evaluated=80, processed=80
+[12/24] video27_00240: evaluated=80, processed=80
+[13/24] video27_00400: evaluated=80, processed=80
+[14/24] video27_00480: evaluated=80, processed=80
+[15/24] video27_00640: evaluated=80, processed=80
+[16/24] video37_00528: evaluated=80, processed=80
+[17/24] video37_00688: evaluated=80, processed=80
+[18/24] video37_00768: evaluated=80, processed=80
+[19/24] video37_00848: evaluated=80, processed=80
+[20/24] video37_00928: evaluated=80, processed=80
+[21/24] video37_01008: evaluated=80, processed=80
+[22/24] video55_00508: evaluated=80, processed=80
+[23/24] video55_00588: evaluated=80, processed=80
+[24/24] video55_00668: evaluated=80, processed=80
+
+=== FINAL RESULTS ===
+fold: 4
+bbox_mode: internal
+evaluated_frames: 1920
+processed_frames: 1920
+clips: 24
+included_classes: [1, 2, 3, 4, 5, 6, 7, 8, 9, 12]
+baseline_mdice: 0.7092556888826137
+stitch_mdice: 0.7148279867062842
+baseline_miou: 0.6247565694267985
+stitch_miou: 0.6316548936149399
+baseline_pixel_accuracy: 0.8928480804960347
+stitch_pixel_accuracy: 0.8959417322282182
+baseline_peripheral_mdice: 0.6152489677022931
+stitch_peripheral_mdice: 0.625852437071538
+note: Short-clip PNG evaluation WITHOUT learned tool/port masking; not full Cholec80 continuous-video reproduction.
+[SAVED] /media/yuxuanzhang/yuxuazha/Projects/Stitch-seg/exp_seg/cholecseg8k_benchmark/infer_outputs/images_unetpp_no_masks_fold4
